@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3> Criando View Manualmente</h3>
+
+<h3> Index chamado pelo controlador Home</h3>
+
+<p>
+    @Html.Encode(ViewData["paragrafo1"])
+
+</p>
+
+<p>
+    @Html.Encode(ViewData["paragrafo2"])
+</p>
+
+@*@Html.Encode() converte a cadeia de caracteres especificada em uma cadeia codificada em HTML *@
+
+@* ActionLink para lincar paginas passando no seu parametro o nome do link da ação e do controler *@
+<p>@Html.ActionLink("pagina index do controlador Curso", "Index", "Curso")</p>
+<p>@Html.ActionLink("texto do controlador Curso", "Texto", "Curso")</p>
